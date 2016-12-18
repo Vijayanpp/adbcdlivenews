@@ -7,12 +7,14 @@ import{NewsfetchService} from '../providers/newsfetch.service';
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './layout/layout.component';
 import { FeaturedpostComponent } from './featuredpost/featuredpost.component';
+import { CurrentnewsComponent } from './currentnews/currentnews.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LayoutComponent,
-    FeaturedpostComponent
+    FeaturedpostComponent,
+    CurrentnewsComponent
   ],
   imports: [
     BrowserModule,
