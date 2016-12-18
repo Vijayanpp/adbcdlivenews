@@ -1,0 +1,146 @@
+<!--<section class="row featured_posts">
+        <div class="container">
+         
+            <div class="row" >-->
+              
+               <!--<div class="col-sm-6 post" id="featured_posts" *ngFor="let news of pp1">
+                    <div class="row inner">
+                        <img src="{{news.urlToImage}}" alt="" class="featured-img">
+                        <div class="row m0 content">
+                            <h4 class="category politics"><a href="#">{{news.source}}</a></h4>
+                            <h2 class="title"><a href="single-blog.html">{{news.title}}</a></h2>
+                            <ul class="post_meta nav nav-pills">
+                                <li><a href="#">{{news.publishedAt}}</a></li>
+                                <li><a href="#"><i class="fa fa-thumbs-o-up"></i>1456</a></li>
+                                <li><a href="#"><i class="fa fa-commenting"></i>32</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>-->
+                <!--<div class="col-sm-6 post" *ngFor="let news of pp2">
+                    <div class="row inner">
+                        <img src="{{news.urlToImage}}" alt="" class="featured-img">
+                        <div class="row m0 content">
+                            <h4 class="category sports"><a href="#">{{news.source}}</a></h4>
+                            <h2 class="title"><a href="single-blog.html">{{news.title}}</a></h2>
+                            <ul class="post_meta nav nav-pills">
+                                <li><a href="#">{{news.publishedAt}}</a></li>
+                                <li><a href="#"><i class="fa fa-thumbs-o-up"></i>1456</a></li>
+                                <li><a href="#"><i class="fa fa-commenting"></i>32</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>-->
+                <!--<div class="col-sm-3 post" *ngFor="let news of pp3">
+                    <div class="row inner">
+                        <img src="{{news.urlToImage}}" alt="" class="featured-img">
+                        <div class="row m0 content">
+                            <h4 class="category money"><a href="#">{{news.source}}</a></h4>
+                            <h2 class="title"><a href="single-blog.html">{{news.title}}</a></h2>
+                            <ul class="post_meta nav nav-pills">
+                                <li><a href="#">{{news.publishedAt}}</a></li>
+                                <li><a href="#"><i class="fa fa-thumbs-o-up"></i>1456</a></li>
+                                <li><a href="#"><i class="fa fa-commenting"></i>32</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>-->
+                <!--<div class="col-sm-3 post" *ngFor="let news of pp4">
+                    <div class="row inner">
+                        <img src="{{news.urlToImage}}" alt="" class="featured-img">
+                        <div class="row m0 content">
+                            <h4 class="category world"><a href="#">{{news.source}}</a></h4>
+                            <h2 class="title"><a href="single-blog.html">{{news.title}}</a></h2>
+                            <ul class="post_meta nav nav-pills">
+                                <li><a href="#">{{news.publishedAt}}</a></li>
+                                <li><a href="#"><i class="fa fa-thumbs-o-up"></i>1456</a></li>
+                                <li><a href="#"><i class="fa fa-commenting"></i>32</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>-->
+            <!--</div>
+        </div>
+    </section>-->
+
+    <!--*****************************************************************************************************************-->
+    <!--Feature Posts Here-->
+    <section class="row featured_posts">
+        <div class="container">
+            <div class="row" id="featured_posts">
+                <div class="col-sm-6 post" *ngFor="let news of pp1">
+                    <div class="row inner">
+                        <img src="{{news.urlToImage}}" alt="" class="featured-img">
+                        <div class="row m0 content">
+                            <h4 class="category politics"><a href="#">{{news.source}}</a></h4>
+                            <h2 class="title"><a href="single-blog.html">{{news.title}}</a></h2>
+                            <ul class="post_meta nav nav-pills">
+                                <li><a href="#">{{news.publishedAt}}</a></li>
+                                <li><a href="#"><i class="fa fa-thumbs-o-up"></i>1456</a></li>
+                                <li><a href="#"><i class="fa fa-commenting"></i>32</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+              
+                
+               
+            </div>
+        </div>
+    </section>
+
+
+
+        <section class="row">
+        <div class="container p0">
+            <div class="row all_posts" id="all_posts">
+                <div class="post_sizer"></div>                
+               
+              
+                <div class="col-sm-4 post post-6" *ngFor="let news of pp2">
+                    <div class="row m0 inner">
+                        <div class="row m0 featured_img">
+                            <a href="single-blog.html"><img src="{{news.urlToImage}}" alt=""></a>
+                        </div>
+                        <div class="row m0 post_contents">
+                            <div class="row m0 category sports">
+                                <a href="#">sports</a>
+                                <div class="dropdown pull-right social_share_drop">
+                                    <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-ellipsis-v"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                                        <li><a href="#"><i class="fa fa-google-plus"></i> Google Plus</a></li>
+                                        <li><a href="#"><i class="fa fa-pinterest"></i> Pinterest</a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h3 class="post_title"><a href="#">{{news.title}}</a></h3>
+                            <ul class="post_meta nav nav-pills">
+                                <li><a href="#">{{news.publishedAt}}</a></li>
+                                <li><a href="#"><i class="fa fa-thumbs-o-up"></i>1456</a></li>
+                                <li><a href="#"><i class="fa fa-commenting"></i>32</a></li>
+                            </ul>                    
+                        </div>
+                    </div>
+                </div><!--Post-->
+
+               
+
+
+
+
+            </div>
+        </div></section>
+
+
+<nav id="page_nav" class="row m0">
+        <a href="inc/page2.html"><i class="fa fa-refresh"></i></a>
+        <span>Load More</span>
+    </nav>
+    <!--All Posts Here-->
+
+        
