@@ -1,16 +1,16 @@
    <!--*****************************************************************************************************************-->
     <!--Feature Posts Here-->
-    <section class="row featured_posts">
+    <!--<section class="row featured_posts">
         <div class="container">
             <div class="row" id="featured_posts">
-                <div class="col-sm-6 post" *ngFor="let news of pp1">
+                <div class="col-sm-6 post" *ngFor="let movies of pp1">
                     <div class="row inner">
-                        <img src="{{news.urlToImage}}" alt="" class="featured-img">
+                        <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2{{movies.poster_path}}" alt="" class="featured-img">
                         <div class="row m0 content">
-                            <h4 class="category politics"><a href="#">{{news.source}}</a></h4>
-                            <h2 class="title"><a href="single-blog.html">{{news.title}}</a></h2>
+                            <h4 class="category politics"><a href="#"></a></h4>
+                            <h2 class="title"><a href="single-blog.html">{{movies.original_title}}</a></h2>
                             <ul class="post_meta nav nav-pills">
-                                <li><a href="#">{{news.publishedAt}}</a></li>
+                                <li><a href="#"></a></li>
                                 <li><a href="#"><i class="fa fa-thumbs-o-up"></i>1456</a></li>
                                 <li><a href="#"><i class="fa fa-commenting"></i>32</a></li>
                             </ul>
@@ -22,7 +22,7 @@
                
             </div>
         </div>
-    </section>
+    </section>-->
 
  <!--*****************************************************************************************************************-->
 
@@ -32,10 +32,10 @@
                 <div class="post_sizer"></div>                
                
               
-                <div class="col-sm-4 post post-6" *ngFor="let news of pp2">
+                <div class="col-sm-4 col-lg-3 post post-6" *ngFor="let movies of pp1">
                     <div class="row m0 inner">
                         <div class="row m0 featured_img">
-                            <a href="single-blog.html"><img src="{{news.urlToImage}}" alt=""></a>
+                            <a [routerLink]="['/detail', movies.id]"><img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2{{movies.poster_path}}" alt=""></a>
                         </div>
                         <div class="row m0 post_contents">
                             <div class="row m0 category sports">
@@ -53,9 +53,9 @@
                                     </ul>
                                 </div>
                             </div>
-                            <h3 class="post_title"><a href="#">{{news.title}}</a></h3>
+                            <h3 class="post_title"><a href="#">{{movies.original_title}}</a></h3>
                             <ul class="post_meta nav nav-pills">
-                                <li><a href="#">{{news.publishedAt}}</a></li>
+                                <li><a href="#"></a></li>
                                 <li><a href="#"><i class="fa fa-thumbs-o-up"></i>1456</a></li>
                                 <li><a href="#"><i class="fa fa-commenting"></i>32</a></li>
                             </ul>                    

@@ -24,14 +24,9 @@ export class FeaturedpostComponent implements OnInit {
         this.featurednews=posts;
        console.log(this.featurednews.length);
        for(let i=0;i<this.featurednews.length;i++)
-       {
-          if(i<5)
-            this.pp1.push(this.featurednews[i]);
-          else
-            this.pp2.push(this.featurednews[i]);
-
-       }
-        
+       {          
+       this.pp1.push(this.featurednews[i]);
+       }        
      });   
   
   }

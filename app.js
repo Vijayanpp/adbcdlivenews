@@ -5,7 +5,7 @@ var jsonfile = require('jsonfile');
 // var business=require('./server/business.js');
 // var fashion=require('./server/fashion.js');
 // var hotoffer=require('./server/hotoffer.js');
-// var movie= require('./server/movie.js');
+ var movie= require('./server/movie.js');
 // var quotes= require('./server/quotes.js');
 // var technology=require('./server/technology.js');
 // /*-----------------------------------------------------------------*/
@@ -14,10 +14,10 @@ var newsjson='./server/json/news.json'
 // var businessjson='./server/json/business.json'
 // var fashionjson='./server/json/fashion.json'
 // var hotofferjson='./server/json/hotoffer.json'
-// var moviejson='./server/json/movie.json'
+ var moviejson='./server/json/movie.json'
 // var quotesjson='./server/json/quotes.json'
 // var technologyjson='./server/json/technology.json'
-
+var Movie=require("./server/db/mongoose");
 var app = express();
 
 
@@ -34,7 +34,7 @@ app.get('/', function(request, response) {
 
 
 app.get('/featuredpost', function(request, response) {
- jsonfile.readFile(newsjson, function(err, obj) {
+ jsonfile.readFile(moviejson, function(err, obj) {
   response.send(obj);
   console.log(obj);
 })
